@@ -1,7 +1,7 @@
 # byo-lisp
 
-Build Your Own Lisp, a project for @lawrancej's Compiler Design course at
-Wentworth Institute of Technology, Summer 2014.
+Build Your Own Lisp, a project for Joey Lawrance's (@lawrancej) Compiler Design
+course at Wentworth Institute of Technology, Summer 2014.
 
 ## Goals
 
@@ -12,4 +12,4 @@ as Chapter 16, "Bonus Projects".
 
 ## Team
 
-@NicholasPCole is working individually on the project.
+Nicholas is working individually on the project.
