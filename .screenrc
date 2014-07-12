@@ -1,0 +1,15 @@
+# Disable the startup message.
+startup_message off
+
+# Disable the visual bell on tab-completion.
+vbell off
+
+# Create a toolbar at the bottom, listing open windows, hostname, load averages,
+# and the current time.
+# Source: http://labs.dagensskiva.com/2008/05/02/a-favorite-screenrc-setting/
+caption always "%{= gk}%-Lw%{= rW}%50> %n%f* %t %{-}%+Lw%< %= %{= Gk} %H %{= rW} %l %{= Gk} %0c:%s %{-}".
+
+screen -t 'README'
+screen -t 'Notes'
+screen -t 'Bonus Marks'
+screen -t 'Shell'
