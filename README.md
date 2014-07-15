@@ -24,3 +24,11 @@ source code has been compiled on.
 
 Updates will be presented in class each Tuesday in class from July 15 to August
 5 inclusive (four weeks). The final day of classes is August 5.
+
+### July 15
+
+* Who are you working with, if anybody?
+* What are you working on?
+* What have you done so far?
+* What do you hope to accomplish by next week? How? (Who’s doing what, if this is a team?)
+* What do you need to move forward?
