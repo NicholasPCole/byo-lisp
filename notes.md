@@ -46,3 +46,25 @@ the chapters of the book.
 
 * In C, strings are represented by the pointer type `char*`. Built-in types
   include `void`, `char`, `int`, `long`, `float`, `double`, and more.
+
+## An Interactive Prompt
+
+* There is a typo in the first paragraph: "we can built" should be "we can
+  build". If I find many more typos in the rest of the book, I will submit a
+  pull request fixing them.
+
+* While writing a `while(true) {}` loop, the compiler returned an error:
+
+        $ cc -std=c99 -Wall prompt.c -o prompt.o
+        prompt.c: In function ‘main’:
+        prompt.c:10:12: error: ‘true’ undeclared (first use in this function)
+             while (true) {
+                    ^
+        prompt.c:10:12: note: each undeclared identifier is reported only once for each function it appears in
+
+    This occurs because C does not have any built-in Boolean types.
+
+* Lines beginning with a `#` character are preprocessor commands.
+
+* There is a typo in the Bonus Marks section: "with `printf`." should be "with
+  `printf`?"
