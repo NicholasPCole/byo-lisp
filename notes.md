@@ -32,3 +32,17 @@ the chapters of the book.
 
     Not explained is the `-Wall` flag. According to [FreeBSD documentation](http://www.freebsd.org/doc/en/books/developers-handbook/tools-compiling.html),
     this tells `cc` to enable warnings which the package's authors believe worthwhile.
+
+## Basics
+
+* C programs consist of *function definitions* and *structure definitions*.
+  Source files contain *functions* and *types*. Structures are used to declare
+  new types, like so:
+
+        typedef struct {
+            float x;
+            float y;
+        } point;
+
+* In C, strings are represented by the pointer type `char*`. Built-in types
+  include `void`, `char`, `int`, `long`, `float`, `double`, and more.
