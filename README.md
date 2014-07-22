@@ -53,5 +53,5 @@ Updates will be presented in class each Tuesday in class from July 15 to August
 
 * **What do you need to move forward?** I would like to pick up my pace a bit
   to be closer to my original goal to average three chapters per week. After
-  completing those chapters, I will evaluate whether the likelihood of
-  finishing an additional chapter or two before next week's progress report.
+  completing those chapters, I will evaluate the feasibility of doing an
+  additional chapter or two before next week's progress report.
