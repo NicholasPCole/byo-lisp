@@ -47,10 +47,8 @@ Updates will be presented in class each Tuesday in class from July 15 to August
   (Chapter 4). These chapters reviewed basic C syntax and created a simple
   interactive prompt that echos back what the user types (known as a
   read-evaluate-print loop).
-
 * **What do you hope to accomplish by next week? How?** I hope to complete
   Chapters 5-8 on Languages, Parsing, Evaluation, and Error Handling.
-
 * **What do you need to move forward?** I would like to pick up my pace a bit
   to be closer to my original goal to average three chapters per week. After
   completing those chapters, I will evaluate the feasibility of doing an

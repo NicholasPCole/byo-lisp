@@ -18,18 +18,15 @@ the chapters of the book.
         Copyright (C) 2013 Free Software Foundation, Inc.
         This is free software; see the source for copying conditions.  There is NO
         warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
     On OS X 10.9.4, the following is output:
 
         $ cc --version
         Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
         Target: x86_64-apple-darwin13.3.0
         Thread model: posix
-
 * The Compilation section prompts the user to run the following command:
 
         cc -std=c99 -Wall hello_world.c -o hello_world
-
     Not explained is the `-Wall` flag. According to [FreeBSD documentation](http://www.freebsd.org/doc/en/books/developers-handbook/tools-compiling.html),
     this tells `cc` to enable warnings which the package's authors believe worthwhile.
 
@@ -43,7 +40,6 @@ the chapters of the book.
             float x;
             float y;
         } point;
-
 * In C, strings are represented by the pointer type `char*`. Built-in types
   include `void`, `char`, `int`, `long`, `float`, `double`, and more.
 
@@ -52,7 +48,6 @@ the chapters of the book.
 * There is a typo in the first paragraph: "we can built" should be "we can
   build". If I find many more typos in the rest of the book, I will submit a
   pull request fixing them.
-
 * While writing a `while(true) {}` loop, the compiler returned an error:
 
         $ cc -std=c99 -Wall prompt.c -o prompt.o
@@ -61,10 +56,7 @@ the chapters of the book.
              while (true) {
                     ^
         prompt.c:10:12: note: each undeclared identifier is reported only once for each function it appears in
-
     This occurs because C does not have any built-in Boolean types.
-
 * Lines beginning with a `#` character are preprocessor commands.
-
 * There is a typo in the Bonus Marks section: "with `printf`." should be "with
   `printf`?"
