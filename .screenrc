@@ -12,4 +12,5 @@ caption always "%{= gk}%-Lw%{= rW}%50> %n%f* %t %{-}%+Lw%< %= %{= Gk} %H %{= rW}
 screen -t 'README'
 screen -t 'Notes'
 screen -t 'Bonus Marks'
+screen -t 'Editor'
 screen -t 'Shell'
