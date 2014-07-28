@@ -63,3 +63,41 @@ Exercises completed at the end of each chapter.
   is used, it is replaced by the contents of the macro.
 * Linux and Mac OS X might define the `__linux__` and `__APPLE__&&__MACH__`
   macros, respectively.
+
+## Languages
+
+* Other examples of strings the `Doge` language includes are "`wow lisp`",
+  "`many c wow language`," and "`many build`."
+* Back slashes escape the quotation marks, which delineate literal words in the
+  re-write rules.
+* Back slashes at the end of the line serve to wrap the string to the next
+  line.
+* First, create a rule defining `digit`, allowing exactly one number (character)
+  between zero and nine, inclusive. Then create another rule for `decimal`,
+  allowing one or more `digit`, followed by exactly one character `.` period,
+  followed by one or more `digit` again.
+* A grammar for web URLs might include rules for `protocol` (`https?`), `domain`
+  (an alphanumeric string), `tld` (`com`, `net`, or `edu`), and `url`
+  (`protocol`, "`://`", `domain`, '`.`', `tld`).
+* A grammar for simple English sentences might include rules for an article,
+  noun, noun phrase, verb, and verb phrase.
+* A grammar for a decimal number:
+
+        digit ::= [0-9]
+        decimal-number ::= <digit>+ "." <digit>+
+    A grammar for a web address:
+
+        protocol ::= "http" | "https"
+        domain ::= [A-Za-z0-9][-A-Za-z0-9]*
+        tld ::= "com" | "net" | "edu"
+        url ::= <protocol> "://" (<domain> ".")* <domain> "." <tld>
+    A grammar for simple English sentences:
+
+        article ::= "a" | "an" | "the"
+        noun ::= "cat" | "mat" | "boy"
+        noun-phrase ::= <article> <noun>
+        verb ::= "sat" | "meowed" | "slept"
+        preposition ::= "on" | "beneath" | "near"
+        verb-phrase ::= <verb> <preposition> <noun-phrase>
+        sentence ::= <noun-phrase> <verb-phrase>
+

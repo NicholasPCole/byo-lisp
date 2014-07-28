@@ -60,3 +60,19 @@ the chapters of the book.
 * Lines beginning with a `#` character are preprocessor commands.
 * There is a typo in the Bonus Marks section: "with `printf`." should be "with
   `printf`?"
+
+## Languages
+
+* *Re-write rules* describe how one thing can be re-written as something else.
+  Although an infinite number of things (or sentences) can be expressed in a
+  language, it is possible to process and understand them using a finite number
+  of re-write rules, collectively known as a *grammar*.
+* [`mpc`](https://github.com/orangeduck/mpc) is a Parser Combinator library; it
+  enables us to write normal code that just looks like a grammar, or we can use
+  special syntax to write a grammar directly.
+* There is a typo in the first paragraph of the Coding Grammars section: "Shiba
+  Inu" should be followed by a comma instead of a period, and "More" switched to
+  lower-case.
+* `mpc` functions for building parsers include `mpc_or`, `mpc_and`, and
+  `mpc_many`. `mpcf_strfold` and `free` are two arguments that we will ignore
+  for now.
