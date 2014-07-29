@@ -76,3 +76,13 @@ the chapters of the book.
 * `mpc` functions for building parsers include `mpc_or`, `mpc_and`, and
   `mpc_many`. `mpcf_strfold` and `free` are two arguments that we will ignore
   for now.
+
+## Parsing
+
+* When including files in C source code, surrounding the file name with angled
+  brackets will search system locations for headers first, while surrounding the
+  file name with quotation marks searches the current directory first.
+* What is the purpose of the first argument, `"<stdin>"`, in the `mpc_parse`
+  function?
+* There is a typo in the "Parsing User Input" section. "On success a internal
+  structure" should be "On success an internal structure."

@@ -101,3 +101,23 @@ Exercises completed at the end of each chapter.
         verb-phrase ::= <verb> <preposition> <noun-phrase>
         sentence ::= <noun-phrase> <verb-phrase>
 
+## Parsing
+
+* A regular expression to match strings of all `a` or `b` is `[ab]+`.
+* A regular expression to match strings of consecutive `a` and `b` is
+  `a(ba)*b?`.
+* A regular expression to match these strings is `^(pit|pot|respite)$`.
+  While attempting to change the grammar to parse decimal numbers, I encountered
+  the following error at compile time:
+
+        $ cc -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing.o
+        parsing.c: In function ‘main’:
+        parsing.c:43:13: warning: unknown escape sequence: '\.' [enabled by default]
+                  "                                                     \
+                  ^
+    The corresponding code:
+
+        number   : /-?[0-9]+(.[0-9]+)?/ ;                                                                                                                                      
+    Does `mpc` not support escaping characters (as a `.` usually matches any
+    character, when we want to match only a literal dot.
+
