@@ -86,3 +86,11 @@ the chapters of the book.
   function?
 * There is a typo in the "Parsing User Input" section. "On success a internal
   structure" should be "On success an internal structure."
+
+
+## Evaluation
+
+* Abstract syntax trees are represented in `mpc` by the `mpc_ast_t` structure,
+  with fields for the `tag`, `contents`, `state`, `children_num`, and `children`,
+* Note that `children` is a double pointer type. Because the type `mpc_ast_t*`
+  is a pointer to a structure, you use `->` to access its fields.
