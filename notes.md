@@ -94,3 +94,12 @@ the chapters of the book.
   with fields for the `tag`, `contents`, `state`, `children_num`, and `children`,
 * Note that `children` is a double pointer type. Because the type `mpc_ast_t*`
   is a pointer to a structure, you use `->` to access its fields.
+
+## Error Handlings
+
+* Two useful programs for debugging are `gdb` and `valgrind`.
+* The question mark in `<condition> ? <then> : <else>` is known as the *ternary
+  operator*.
+* In what instances will `LERR_BAD_OP` or `LERR_BAD_NUM` error types be created,
+  since parsing should find those values not matching the language and thus not
+  perform the computation anyway?
