@@ -138,3 +138,15 @@ the chapters of the book.
 * Q-expressions, or *quoted expressions*, are not evaluated by standard Lisp
   mechanics. Their syntax is similar to that of S-expressions, but surrounded
   by curly brackets `{}` instead.
+
+## Variables
+
+* The *environment* is a structure which stores the name and value of everything
+  named in our program.
+* Once variables are introduced, we will not need to explicitly add symbols to
+  the grammar. Instead, they will be a name for us to lookup in the environment.
+* Therefore, we will need a new value to represent functions. *Function pointers*
+  have a type matching the type of the function pointed to, not the type of the
+  data pointed to.
+* Because both the `lval` and `lenv` structs depend on each other, there is a
+  *cyclic dependency* that must be addressed.
