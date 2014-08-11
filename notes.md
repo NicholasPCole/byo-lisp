@@ -126,3 +126,15 @@ the chapters of the book.
   long-term storage, and modified using the `malloc` and `free` functions.
 * There is a typo in the first paragraph of the "Parsing Expressions" section:
   "parenthesis" should be "parentheses."
+
+## Q-Expressions
+
+* Adding new features to a language typically follows these four steps:
+    * Syntax: Add a new rule to the language grammar for this feature.
+    * Representation: Add new data type variations to represent this feature.
+    * Parsing: Add new functions for reading this feature from the abstract
+      syntax tree.
+    * Semantics: Add new functions for evaluating and manipulating this feature.
+* Q-expressions, or *quoted expressions*, are not evaluated by standard Lisp
+  mechanics. Their syntax is similar to that of S-expressions, but surrounded
+  by curly brackets `{}` instead.
