@@ -103,3 +103,26 @@ the chapters of the book.
 * In what instances will `LERR_BAD_OP` or `LERR_BAD_NUM` error types be created,
   since parsing should find those values not matching the language and thus not
   perform the computation anyway?
+
+## S-Expressions
+
+* In this chapter, we will extend our `lval` structure to represent an
+  S-Expression, or *Symbolic Expression*. S-Expressions are evaluated in a
+  manner similar to Lisps: look at the first item in the list and take this to
+  be the operator; then look at all other items in the list and them to be the
+  operands.
+* Arguments are passed *by value* for `int`, `long`, `char`, and user-defined
+  `struct` types such as `lval`.
+* There is a typo in the second paragraph of the "Pointers" section: "user
+  defined" should be "user-defined."
+* Pointer types are declared by suffixing existing ones with the `*` character.
+  To get the address of some data, prefix the variable name with the `&`
+  character. To get the data at an address, prefix the variable name with the
+  `*` operator.
+* There is a typo in the last paragraph of the "Pointers" section: "size" should
+  be "side."
+* The stack is the temporary memory area used while your program - and different
+  functions within - are running. The heap is a section of memory used for
+  long-term storage, and modified using the `malloc` and `free` functions.
+* There is a typo in the first paragraph of the "Parsing Expressions" section:
+  "parenthesis" should be "parentheses."
